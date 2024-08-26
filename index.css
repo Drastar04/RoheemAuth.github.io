@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Roboto-Bold;
+    font-family: Roboto-Regular;
+    src: url(fonts/Roboto-Bold.woff);
+    src: url(fonts/Roboto-Regular.woff);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #e1ecec;
+}
+.container{
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.form-section{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    width: 600px;
+}
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    /* text-align: left; */
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.first-line{
+    flex: 1;
+}
+.cfm-button{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cfm-button button{
+    
+    padding: 10px 100px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.3);
+}
+
+.csignup-button{
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+.csignup-button:hover{
+    border: 1px solid;
+}
+.signup-button{
+    border-radius: 5px;
+    border: 1px solid #4931a8;
+    background-color: #4931a8;
+    color: white;
+}
+.signup-button:hover{
+    background-color: #10043d;
+}
+.form-section input, .form-section select{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 5px;
+}
+.bottom-line{
+    text-align: center;
+}
+.bottom-line a{
+    font-weight: bold;
+    color: #4931a8;
+    text-decoration: none;
+}
+
+@media (max-width: 616px){
+    .form-group{
+        width: 100%;
+        flex-direction: column;
+    }
+    .first-line{
+        width: 100%;
+    }
+    .first-section{
+        width: 100%;
+    }
+}
